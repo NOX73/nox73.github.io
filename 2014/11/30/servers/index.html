@@ -50,10 +50,6 @@
                                 </li>
                                 
                                 <li class="search-archive-li mp-pjax">
-                                    <a href="/2014/11/30/servers/">Сервера</a>
-                                </li>
-                                
-                                <li class="search-archive-li mp-pjax">
                                     <a href="/2014/11/28/hello-world/">Hello World</a>
                                 </li>
                                 
@@ -94,12 +90,7 @@
                                 
                                 <li class="search-tag-li mp-pjax">
                                     <a href="/tags/web/">&nbsp;&nbsp;&nbsp;web</a>
-                                    <small>2</small>
-                                </li>
-                                
-                                <li class="search-tag-li mp-pjax">
-                                    <a href="/tags/web-base/">&nbsp;&nbsp;&nbsp;web, base</a>
-                                    <small>0</small>
+                                    <small>1</small>
                                 </li>
                                 
                                 </div>
@@ -119,15 +110,11 @@
                 
                     <a  data-pjax href="/2014/11/30/servers/">Сервера</a>
                 
-                    <a  data-pjax href="/2014/11/30/servers/">Сервера</a>
-                
                     <a  data-pjax href="/2014/11/28/hello-world/">Hello World</a>
                 
                 
                 
                     <a data-pjax href="/tags/web/">&nbsp;&nbsp;web</a>
-                
-                    <a data-pjax href="/tags/web-base/">&nbsp;&nbsp;web, base</a>
                 
                 <a data-pjax class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a>
             </div>
@@ -205,7 +192,7 @@
 <h5 id="⇒_⇒_Параллельно">⇒ ⇒ Параллельно</h5>
 <p>На каждый запрос запускается нить, которая будет его обрабатывать.</p>
 <h5 id="…_…_Конкурентно">… … Конкурентно</h5>
-<p>Все запросы обрабатываются в одной нити, но она постоянно переключается<br>между запросами не дожидаясь окончания обработки запроса.</p>
+<p>Все запросы обрабатываются в одной нити, но она постоянно переключается<br>между запросами не дожидаясь окончания обработки каждого.</p>
 <h2 id="Последовательная_обработка">Последовательная обработка</h2>
 <p>Нить получает запрос, обрабатывает, отдает ответ. Все просто.</p>
 <p>Проблемы возникают когда в процессе обработки запроса необходимо сделать что-то, что требует ожидания. Например, нужно сходить на диск и прочитать файл. Либо сделать длительный запрос в базу данных. Все остальные запросы в таком случае будут просто стоять в очереди.</p>
@@ -251,8 +238,6 @@
             <a data-pjax class="newer-posts" href="/2014/11/28/hello-world/">← Prev Post</a>
             
             <a class="share-button" data-original-title title>Share this Post</a>
-            
-            <a data-pjax class="older-posts" href="/2014/11/30/servers/">Next Post →</a>
             
         </nav>
         <br/>
