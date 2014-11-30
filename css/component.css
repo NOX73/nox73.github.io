@@ -229,6 +229,7 @@ html, body, .container, .scroller, #pjax {
 }
 
 .search {
+    width: 300px;
     border: none;
     outline: none;
     -webkit-appearance: none;
